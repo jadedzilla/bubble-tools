@@ -48,3 +48,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //     window.close();
 //     alert('Debug mode deactivated!');
 // }
+
+var gear = document.getElementsByClassName('gear')[0];
+var bubble = document.getElementById('bubble');
+if(gearbubble){
+  gear.addEventListener('animationend', function(e) {
+    gear.classList.remove('fast');
+  });
+
+  bubble.addEventListener('mouseover', function(e) {
+    gear.classList.add('fast')
+  })
+}
