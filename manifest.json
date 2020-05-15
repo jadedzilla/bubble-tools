@@ -18,11 +18,12 @@
   },
   "options_page": "src/options_custom/index.html",
   "browser_action": {
-    "default_icon": "icons/bubble-tools-icon-19px.png",
-    "default_title": "page action demo",
-    "default_popup": "src/page_action/page_action.html"
+    "default_title": "Bubble Tools",
+    "default_popup": "src/page_action/page_action.html",
+    "default_icon": "icons/bubble-tools-icon-19px.png"
   },
   "permissions": [
+    "storage",
     "clipboardWrite",
     "contextMenus",
     "cookies",
