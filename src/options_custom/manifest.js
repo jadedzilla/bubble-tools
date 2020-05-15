@@ -1,7 +1,7 @@
 // SAMPLE
 this.manifest = {
-    "name": "My Extension",
-    "icon": "icon.png",
+    "name": "Bubble Tools",
+    "icon": "../../icons/bubble-tools-icon-48px.png",
     "settings": [
         {
             "tab": i18n.get("information"),
