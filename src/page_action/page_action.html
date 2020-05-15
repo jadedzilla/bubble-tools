@@ -1,136 +1,32 @@
 <!doctype html>
-<style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
 
-	h1 {
-		font-size: 2em;
-	}
-
-	.center {
-		margin-right: 25%;
-		margin-left: 35%;
-		width: 60%;
-		padding: 10px;
-	}
-
-	.floating {
-		animation-name: floating;
-		animation-duration: 3s;
-		animation-iteration-count: infinite;
-		animation-timing-function: ease-in-out;
-		margin-left: 30px;
-		margin-top: 5px;
-	}
-
-	@keyframes floating {
-		from {
-			transform: translate(0, 0px);
-		}
-
-		65% {
-			transform: translate(0, 15px);
-		}
-
-		to {
-			transform: translate(0, -0px);
-		}
-	}
-
-	@-ms-keyframes spin {
-		from {
-			-ms-transform: rotate(0deg);
-		}
-
-		to {
-			-ms-transform: rotate(360deg);
-		}
-	}
-
-	@-moz-keyframes spin {
-		from {
-			-moz-transform: rotate(0deg);
-		}
-
-		to {
-			-moz-transform: rotate(360deg);
-		}
-	}
-
-	@-webkit-keyframes spin {
-		from {
-			-webkit-transform: rotate(0deg);
-		}
-
-		to {
-			-webkit-transform: rotate(360deg);
-		}
-	}
-
-	@keyframes spin {
-		from {
-			transform: rotate(0deg);
-		}
-
-		to {
-			transform: rotate(360deg);
-		}
-	}
-
-	.gear {
-		width: 25%;
-		position: relative;
-		top: 0;
-		left: 0;
-		z-index: -1;
-
-		-webkit-animation-name: spin;
-		-webkit-animation-duration: 4000ms;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: linear;
-		-moz-animation-name: spin;
-		-moz-animation-duration: 4000ms;
-		-moz-animation-iteration-count: infinite;
-		-moz-animation-timing-function: linear;
-		-ms-animation-name: spin;
-		-ms-animation-duration: 4000ms;
-		-ms-animation-iteration-count: infinite;
-		-ms-animation-timing-function: linear;
-
-		animation-name: spin;
-		animation-duration: 4000ms;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-	}
-
-	.bubble {
-		width: 25%;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.title {
-		/* position: relative; */
-		text-align: center;
-	}
-</style>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts.js"></script>
+</head>
 
 <body>
 	<div id="mainPopup">
-		<div class="title">
-			<h1>Bubble Tools</h1>
-			<p>There will be tools and stuff here, but not yet, y'know?</p>
-		</div>
 		<div class="center">
-			<div class="floating">
+			<div class="floating" id="bubble">
 				<img class="bubble" src="../../icons/bubble-tools-icon-bubble.png"></img>
 				<img class="gear" src="../../icons/bubble-tools-icon-48px.png"></img>
 			</div>
 		</div>
+		<div class="title">
+			<h1><a style="color: rgb(0, 0, 255); font-size: x-large;">.</a>bubbletools</h1>
+			<p>Select an option below:</p>
+		</div>
+		<div>
+			<a id="debugtoggle" class="button1">Toggle Debug Mode</a>
+			<a id="versiontoggle" class="button1">Toggle Test/Live</a>
+		</div>
 	</div>
 </body>
+<footer>
+	<div style="text-align: center;">
+		<small>Created with &hearts; by
+			<a href="https://jadedkitty.dev">jadedkittydev</a>
+		</small>
+	</div>
+</footer>
