@@ -9,6 +9,9 @@
 h1 {
   font-size: 2em;
 }
+.link {
+    color: rgb(0, 0, 255);
+}
 
 .center {
   margin-right: 25%;
