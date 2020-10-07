@@ -367,6 +367,7 @@ a.button1 {
   color: #000000;
   text-align: center;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 a.button1:hover {
