@@ -333,6 +333,7 @@ h1 {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .gear.fast {
   -webkit-animation-duration: 1000ms;
   -moz-animation-duration: 1000ms;
